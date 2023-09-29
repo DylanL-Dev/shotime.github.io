@@ -26,7 +26,8 @@ a {
 img {
   object-fit: cover;
 }
-body, html {
+body,
+html {
   font-family: var(--Tosia-Bold);
   scroll-behavior: smooth;
 }
@@ -40,6 +41,10 @@ header {
 
 .nav_mobile {
   display: none;
+}
+
+.panier {
+  visibility: hidden;
 }
 .container_nav nav {
   display: flex;
@@ -238,6 +243,9 @@ img {
   .nav_mobile {
     display: none;
   }
+  .panier {
+    visibility: hidden;
+  }
   .container_nav nav {
     justify-content: center;
     font-size: 15px;
@@ -367,6 +375,16 @@ img {
     z-index: 2;
   }
 
+  .panier {
+    visibility: visible;
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    right: 0;
+    left: 70%;
+    font-size: 20px;
+  }
+
   .overlay-content {
     position: relative;
     top: 25%;
@@ -382,7 +400,6 @@ img {
     color: #818181;
     display: block;
     transition: 0.3s;
-
   }
 
   .overlay a:hover,
@@ -417,7 +434,7 @@ img {
 
   .logo_mobile {
     display: contents;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .logo_mobile p {
@@ -437,12 +454,12 @@ img {
   .title_main {
     transform: rotate(0deg);
     font-size: 65px;
-position: absolute;
+    position: absolute;
 
-top: 0%;
-bottom: -505px;
-left: 65%;
-transform: translate(-50%, -50%);
+    top: 0%;
+    bottom: -505px;
+    left: 65%;
+    transform: translate(-50%, -50%);
   }
 
   .container_main p {
@@ -499,7 +516,4 @@ transform: translate(-50%, -50%);
     margin-top: 30px;
     margin-right: 6%;
   }
-
-
-
 }
