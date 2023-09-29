@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shotime - Découvrez les dernières nouveautés en chaussures Nike pour hommes et femmes. Trouvez des offres incroyables sur les modèles Nike rn 2018 free et Nike air force one low."
+    />
+    <meta name="schema.org" content="https://schema.org/" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="preload"
+      href="/html/font/Tosia-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="html/css/node_modules/normalize.css/normalize.css"
+    />
+    <link rel="stylesheet" href="html/css/Style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/79857fa36d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Shotime</title>
+  </head>
+  <body>
+    <header>
+      <div class="background"></div>
+      <div class="circle">
+        <i class="fa-solid fa-circle"></i>
+      </div>
+
+      <div class="logo_mobile">
+        <p>Shotime</p>
+      </div>
+      <div class="nav_mobile">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <a href="#">Hommes</a>
+            <a href="#">Femmes</a>
+            <a href="#">Panier</a>
+            <a href="#new">Nouveauté</a>
+          </div>
+        </div>
+
+        <span class="btn_mobile" onclick="openNav()"
+          >&#9776;</span
+        >
+
+        <script>
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          }
+
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          }
+        </script>
+      </div>
+      <div class="container_nav">
+        <nav>
+          <p id="logo">Shotime</p>
+
+          <ul>
+            <li><a href="#">Hommes</a></li>
+            <li><a href="#">Femmes</a></li>
+          </ul>
+          <a href="#"><i class="fas fa-search"></i></a>
+          <div class="menu-icons">
+            <a href="#"><p>Panier</p></a>
+            <a href="#"><p>Menu</p></a>
+            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container_main">
+        <h1 class="title_main">Découvrir</h1>
+        <p>Nouveauté</p>
+      </div>
+      <div class="container_card">
+        <div class="card">
+          <h2>01</h2>
+          <img class="chaussure" src="html/image/0001.png" alt="chausure" />
+          <p>Nike rn 2018 free</p>
+          <h3 class="price">109.95 €</h3>
+          <a href="#"
+            ><div class="container_plus_1">
+              <i class="fa-solid fa-plus"></i></div
+          ></a>
+        </div>
+        <div class="card card2">
+          <h2>02</h2>
+          <img class="chaussure" src="html/image/0002.png" alt="chausure" />
+
+          <p class="name">Nike air force one low</p>
+          <h3 class="price">94.95 €</h3>
+        </div>
+        <div class="container_marque" id="new">
+          <img
+            src="html/image/580b57fcd9996e24bc43c4f3.png"
+            alt="logo de marque"
+          />
+          <img
+            class="marque_filter"
+            src="html/image/580b57fcd9996e24bc43c4f2.png"
+            alt="logo de marque"
+          />
+          <img
+            class="marque_filter"
+            src="html/image/613b65bd30e8530004ba3a08.png"
+            alt="logo de marque"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="carouselle">
+        <i class="fa-solid fa-chevron-left"></i>
+        <p>Prev</p>
+        <p>Next</p>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+      <div class="social">
+        <p>Pinterest</p>
+        <p>Facebook</p>
+      </div>
+      <div class="social_mobile">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-pinterest"></i>
+      </div>
+      <div class="space"></div>
+    </footer>
+  </body>
+</html>
