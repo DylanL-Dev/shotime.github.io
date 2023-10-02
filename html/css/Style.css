@@ -56,6 +56,15 @@ header {
 
 #logo {
   font-size: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo p {
+  font-size: 10px;
+  padding-right: 25px;
+  filter: contrast(0%);
 }
 
 .container_nav ul {
@@ -260,6 +269,10 @@ img {
     font-size: 27px;
   }
 
+  #logo p {
+    padding-right: 35px;
+  }
+
   .circle {
     bottom: -330px;
     left: 7%;
@@ -349,8 +362,15 @@ img {
 @media screen and (max-width: 768px) {
   .nav_mobile {
     display: contents;
+    position: relative;
   }
 
+  #myName {
+    position: absolute;
+    top: 30px;
+    font-size: 9px;
+    filter: contrast(0%);
+  }
   .btn_mobile {
     font-size: 30px;
     cursor: pointer;
@@ -410,8 +430,9 @@ img {
   .overlay .closebtn {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    left: 84%;
-    font-size: 60px;
+    top: 30px;
+    left: 70%;
+    font-size: 45px;
   }
 
   @media screen and (max-height: 450px) {
