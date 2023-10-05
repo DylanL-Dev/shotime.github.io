@@ -11,9 +11,12 @@
   /* Autres propriétés de la police (poids, style, etc.) */
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 /* Utilisation de la police personnalisée via root */
 :root {
   --Tosia-Bold: "Tosia-Bold", Arial, sans-serif;
+  --Archivo-Black: "Archivo Black", sans-serif;
 }
 
 ul,
@@ -28,7 +31,8 @@ img {
 }
 body,
 html {
-  font-family: var(--Tosia-Bold);
+  font-family: var(--Tosia-Bold), var(--Archivo-Black), Arial, sans-serif;
+
   scroll-behavior: smooth;
 }
 
@@ -428,7 +432,6 @@ img {
   }
 
   .overlay .closebtn {
-    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     top: 30px;
     left: 70%;
