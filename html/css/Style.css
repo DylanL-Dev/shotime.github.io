@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Tosia-Bold"; /* Utilisation d'un nom de police personnalisée */
-  src: url("/html/font/Tosia-Bold.woff2") format("woff2");
-  /* Autres propriétés de la police (poids, style, etc.) */
-}
-
+/* Utilisation d'un nom de police personnalisée */
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+@font-face {
+  font-family: "Tosia-Bold";
+  src: url("/html/font/Tosia-Bold.woff2") format("woff2");
+}
 
 /* Utilisation de la police personnalisée via root */
 :root {
@@ -32,7 +32,6 @@ img {
 body,
 html {
   font-family: var(--Tosia-Bold), var(--Archivo-Black), Arial, sans-serif;
-
   scroll-behavior: smooth;
 }
 
